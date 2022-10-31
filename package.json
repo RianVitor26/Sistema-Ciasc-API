@@ -1,0 +1,20 @@
+{
+  "name": "Sistema-Ciasc-API",
+  "version": "1.0.0",
+  "description": "API para o sistema ciasc fisio front-end ",
+  "main": "index.js",
+  "repository": "https://github.com/RianVitor26/Sistema-Ciasc-API",
+  "author": "RianVitor26 <rianvitorlhe@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "sucrase": "^3.28.0"
+  },
+
+  "scripts": {
+    "dev": "nodemon ./src/server.js"
+  }
+}
