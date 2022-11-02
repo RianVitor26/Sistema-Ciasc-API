@@ -1,17 +1,17 @@
-import mongoose from 'mongoose'
+// import mongoose from 'mongoose'
 
-import config from '../config/database'
+// import config from '../config/database'
 
-class Database{
-    constructor() {
-        this.connection = mongoose.connect(
-            config.url,
-            {
-                useNetUrlParser: true,
-                useUnifiedTopology: true,
-            }
-        )
-    }
-}
+// class Database{
+//     constructor() {
+//         this.connection = mongoose.connect(
+//             config.url,
+//             {
+//                 useNetUrlParser: true,
+//                 useUnifiedTopology: true,
+//             }
+//         )
+//     }
+// }
 
-export default new Database()
+// export default new Database()
