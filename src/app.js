@@ -1,5 +1,7 @@
 import express, { Router } from 'express'
 import cors from 'cors'
+import routes from './routes'
+import './database'
 
 class App {
     constructor() {
@@ -14,12 +16,6 @@ class App {
     }
 
     routes() {
-        const routes = new Router()
-
-        routes.get('/hello', (request, response) => {
-            response.json({hello: 'world'})
-        })
-
         this.server.use(routes)
     }
 } 
