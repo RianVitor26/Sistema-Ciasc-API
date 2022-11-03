@@ -1,12 +1,15 @@
 import { Router } from 'express'
-import HelloController from './controllers/HelloController'
+import ApiController from "./controllers/ApiController";
 
 const routes = new Router()
 
 routes.get('/', (req, res) => {
-    res.send("Home")
+    res.render("Home")
 })
+routes.get("/api", ApiController.index);
 
-routes.get('/hello', HelloController.index)
+routes.get("/api", (req, res) => {
+    res.render("API");
+});
 
 export default routes
