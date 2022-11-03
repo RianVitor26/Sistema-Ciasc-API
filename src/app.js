@@ -3,6 +3,7 @@ import cors from 'cors'
 import routes from './routes'
 import './database'
 import path from 'path'
+import bodyParser from 'body-parser'
 
 class App {
     constructor() {
@@ -17,6 +18,8 @@ class App {
         this.server.set('view engine', 'ejs')
         this.server.set('views', path.join(__dirname, 'views'))
         this.server.use(express.static(path.join(__dirname, 'public')))
+        this.server.use(bodyParser.urlencoded({ extended: true }));
+        this.server.use(bodyParser.json())
     }
 
     routes() {

@@ -8,8 +8,4 @@ routes.get('/', (req, res) => {
 })
 routes.get("/api", ApiController.index);
 
-routes.get("/api", (req, res) => {
-    res.render("API");
-});
-
 export default routes
